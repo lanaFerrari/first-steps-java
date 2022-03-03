@@ -5,7 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GreetingRepository extends JpaRepository<Greeting, String> {
-
-    //Custom methods go here
-
+    // custom methods go here (later)
 }
