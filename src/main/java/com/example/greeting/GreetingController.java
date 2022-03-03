@@ -33,7 +33,7 @@ public class GreetingController {
 
     @GetMapping("/greeting/{id}")
     public Greeting getGreetingById(@PathVariable String id) {
-        return greetings.get(Integer.parseInt(id) - 1);
+        return repository.findById(Integer.parseInt(id));
     }
 
 
